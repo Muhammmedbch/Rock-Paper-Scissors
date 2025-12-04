@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f1923;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 35px;
+}
+
+header,
+main #computer-choice h1,
+#user-move h1 {
+  color: #ffffff;
+}
+
+header #score-div, #butts {
+  display: flex;
+  gap: 20px;
+}
+
+main,
+main #result,
+main #computer-choice,
+main #computer-choice #com-img-div,
+#user-move,
+#rock,
+#paper,
+#scissor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  box-sizing: border-box;
+  padding:10px 20px;
+  gap: 20px;
+}
+
+main #computer-choice {
+  gap: 10px;
+}
+
+main #computer-choice h1 {
+  font-weight: 400;
+}
+
+main #computer-choice #com-img-div,
+#rock,
+#paper,
+#scissor {
+  width: 200px;
+  height: 200px;
+  background-color: #28354a;
+  border-radius: 50%;
+}
+
+main #computer-choice #com-img-div img,
+#rock-paper-scissor div img {
+  width: 60%;
+}
+
+main #result h1 {
+  color: #1f8cff;
+}
+
+main #result span {
+  color: #808080;
+}
+
+main #rock-paper-scissor {
+  display: flex;
+  gap: 20px;
+  margin: 15px;
+}
+
+main #rock,
+#paper,
+#scissor {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#rock-paper-scissor div:hover {
+  box-shadow: 0px 0px 20px #1f8cff;
+}
+
+#butts button{
+    background-color: #1f8cff;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+#butts button:hover{
+    transform: scale(1.1);
+    transition: 0.6 ease;
+}
+
+@media (max-width: 767px){
+  header h1{
+    display: none;
+    margin: auto;
+  }
+
+  header #score-div{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main{
+    height: 80vh;
+  }
+}

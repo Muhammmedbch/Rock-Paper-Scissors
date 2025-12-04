@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="shortcut icon" href="favico.svg" type="image/x-icon" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock-Paper-Scissors</h1>
+      <div id="score-div">
+        <h2><span id="player-span"></span> : <span>0</span></h2>
+        <h2>Computer : <span>0</span></h2>
+      </div>
+    </header>
+    <main>
+      <div id="computer-choice">
+        <h1>Computer Choice</h1>
+        <div id="com-img-div"><img id="c_choice" src="robot.svg" alt="" /></div>
+      </div>
+      <div id="result">
+        <h1 id="result-text">Result</h1>
+        <span>Result details</span>
+      </div>
+      <div id="user-move">
+        <h1>Make Your Move</h1>
+        <div id="rock-paper-scissor">
+          <div id="rock" onclick="DecideWinner()">
+            <img src="rock.svg" alt="rock" />
+          </div>
+          <div id="paper" onclick="DecideWinner()">
+            <img src="paper.svg" alt="paper" />
+          </div>
+          <div id="scissor" onclick="DecideWinner()">
+            <img src="scissor.svg" alt="scissor" />
+          </div>
+        </div>
+      </div>
+      <div id="butts">
+        <button>Play</button>
+        <button>Reset</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
